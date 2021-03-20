@@ -46,7 +46,7 @@ RSpec.describe 'Items API', type: :request do
             end
 
             it 'returns the item' do
-                expect(json['id']).to eq(id)
+                expect(eval(response.body)[:id]).to eq(id)
             end
         end
 
