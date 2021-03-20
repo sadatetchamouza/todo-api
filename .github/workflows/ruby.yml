@@ -33,4 +33,4 @@ jobs:
     - name: Linting the code
       run: rubocop
     - name: Run tests
-      run: bundle exec rake
+      run: bundle exec rspec
