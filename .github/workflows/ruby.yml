@@ -31,6 +31,6 @@ jobs:
     - name: Install dependencies
       run: bundle install
     - name: Linting the code
-      run: rubocop
+      run: bundle exec rubocop
     - name: Run tests
       run: bundle exec rspec
