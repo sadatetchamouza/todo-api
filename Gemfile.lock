@@ -181,7 +181,7 @@ PLATFORMS
 
 DEPENDENCIES
   bcrypt (~> 3.1.7)
-  bootsnap (>= 1.4.2)
+  bootsnap
   byebug
   database_cleaner
   factory_bot_rails (~> 4.0)
@@ -198,7 +198,7 @@ DEPENDENCIES
   tzinfo-data
 
 RUBY VERSION
-   ruby 2.6.0p0
+   ruby 2.6.3p62
 
 BUNDLED WITH
    2.2.15
