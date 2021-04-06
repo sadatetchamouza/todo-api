@@ -28,6 +28,8 @@ jobs:
       with:
         ruby-version: 2.6.0
         bundler-cache: true # runs 'bundle install' and caches installed gems automatically
+    - name: Add to lock files
+      run: bundle lock --add-platform x86_64-linux
     - name: Install dependencies
       run: bundle install
     - name: Run tests
