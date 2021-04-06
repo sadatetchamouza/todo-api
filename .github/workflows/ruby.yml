@@ -20,8 +20,8 @@ jobs:
     
     steps:
     - uses: actions/checkout@v2
-    - name: Add to lock files
-      run: bundle lock --add-platform x86_64-linux
+    #- name: Add to lock files
+      
     - name: Set up Ruby
     # To automatically get bug fixes and new Ruby versions for ruby/setup-ruby,
     # change this to (see https://github.com/ruby/setup-ruby#versioning):
@@ -30,6 +30,7 @@ jobs:
       uses: ruby/setup-ruby@473e4d8fe5dd94ee328fdfca9f8c9c7afc9dae5e
       with:
         ruby-version: 2.6.0
+        run: bundle lock --add-platform x86_64-linux
         bundler-cache: true # runs 'bundle install' and caches installed gems automatically
     - name: Install dependencies
       run: bundle install
